@@ -1,0 +1,14 @@
+
+Ctrl + Shift + P를 누른뒤 settings.json을 입력후 나오는것중 “User Settings (JSON)” 을 선택합니다
+아래내용 복붙
+"terminal.integrated.profiles.windows": {
+    "linsoo_cmd": {
+        "path": "C:\\WINDOWS\\System32\\cmd.exe",
+        "args":["/K", "chcp", "65001"]
+        },
+    "linsoo_ps": {
+        "source": "PowerShell",
+        "args": ["-NoExit", "-Command ", "[Console]::OutputEncoding = [System.Text.Encoding]::UTF8"]
+    },
+},
+"terminal.integrated.defaultProfile.windows": "linsoo_ps",
